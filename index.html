@@ -14,6 +14,8 @@
 	h2{ text-align : left ;
           color      : darkcyan}
     p{ text-align : justify }
+    ol.a{list-style-type: upper-roman}
+    ol.b{list-style-type: lower-alpha}
     a:link, a:visited {
     background-color: orange;
     color: white;
@@ -52,32 +54,20 @@ a:hover, a:active {
 <p> definizione presa da 
 <a href="https://dizionari.corriere.it/dizionario_italiano/V/vacanza.shtml?refresh_ce-cp" target = "Dizionario online"> qui </a>
 </p>
- <table class="table table-info table-hover">
-    <thead>
-      <tr>
-        <th>  </th>
-        <th>Posti che ho visitato</th>
-        <th>Cose che ho fatto</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td> I </td>
-        <td> Italia </td>
-        <td>Scattato foto ; Visitato i luoghi caratteristici</td>
-      </tr>
-      <tr>
-        <td> II </td>
-        <td> Germania </td>
-        <td>Assaggiato i cibi locali; Visitato Monaco </td>
-      </tr>
-      <tr>
-        <td> III </td>
-        <td> Austria</td>
-        <td> Visitato Salisburgo ; visitato la casa di Mozart</td>
-      </tr>
-    </tbody>
-  </table>
+<p>Posti che ho visitato :</p>
+
+ <ol id = "a" class="list-group-item-primary">
+        <li>Italia</li>
+        <li>Austria</li>
+	 <li>Germania></li>
+	</ol>
+<p> Cose che ho fatto :</p>
+<ol id = "b" class="list-group-item-primary">
+        <li>Assaggiato i cibi locali</li>
+	<li>Scattato foto</li>
+	<li>Visitato i luoghi caratteristici</li>
+</ol>
+        
 
 <h1> HOBBY <h1>
 <h2> Che cos è ? </h2>
