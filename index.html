@@ -2,41 +2,30 @@
 <html>
 <head>
 	<title>F1</title>
-	<meta charset = "UTF-8"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-	<!-- Questa parte riguarda lo stile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
     <body style="background-color: gray">
+	<!-- Questa parte riguarda lo stile -->
     <style>
 	h1{ text-align : center ;
 	      color      : red}
 	h2{ text-align : center ;
           color      : red}
     p{ text-align : justify }
-    ol.a{list-style-type: upper-roman}
-    ol.b{list-style-type: lower-alpha}
-    a:link, a:visited {
-    background-color: orange;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    display: inline-block;
-    border-style: dashed;
-    border : 3 ;
-}
-
-a:hover, a:active {
-    background-color: orange;
-}
-    img#imga{border-style: outset;
-             border : 3 ;
-	    border-color :cyan;
-}
+      .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+    .centro{ text-align :center}
+    
     </style>
+
     <!-- Fine sezione style-->
-</head>
-<body>
+<body style="background-color: gray">
 <div class = "container">
 	<h1 > Formula 1 </h1>
 	<h2 >FIA Formula One World Championship </h2>
@@ -49,9 +38,9 @@ La Formula 1, in sigla F1, ufficialmente in inglese FIA Formula One World Champi
 <br />
 <br />
 Il termine "formula", presente nel nome, fa riferimento a un insieme di regole alle quali tutti i partecipanti, le macchine e i piloti, devono adeguarsi; esse introducono un numero di restrizioni e specifiche nelle auto, al fine di evitare le eccessive disparità tecniche tra le auto, di porre dei limiti al loro sviluppo e di ridurre i rischi di incidenti. La formula ha avuto molti cambiamenti durante la sua storia. Ad esempio, ci sono stati differenti tipi di motori, con schemi da quattro fino a sedici cilindri e con cilindrate da 1,5 a 4,5 l.
+</p>
 <br />
 <br />
-<div class="container">
   <h2>Informazioni generali</h2>
 
   <div class="table-responsive-sm">          
@@ -94,7 +83,57 @@ Il termine "formula", presente nel nome, fa riferimento a un insieme di regole a
     </tbody>
   </table>
   </div>
+
+<h2> Fornitori motori </h2>
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+    <li data-target="#demo" data-slide-to="3"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://i.pinimg.com/originals/c7/e9/23/c7e923e85e72be1bfcdf0891077b5a74.jpg" alt="Power unit Mercedes" width="100%" height="50%">
+      <div class="carousel-caption">
+        <h3>Mercedes Engine (1022 CV)</h3>
+        <p.centro>Team motorizzati : Mercedes, Racing Point, Williams .</p>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="https://i.pinimg.com/originals/b8/24/02/b82402324c39c7fd02a522b60f8b969b.jpg" alt="Power Unit Honda" width="100%" height="50%">
+      <div class="carousel-caption">
+        <h3>Honda Engine(994 CV)</h3>
+        <p.centro>Team motorizzati : Red Bull , Alpha Tauri .</p>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="https://i.pinimg.com/originals/97/97/d5/9797d53df33ae4c3c9f27e0b9dfdbe4d.jpg" alt="Power Unit Renault" width="100%" height="50%">
+      <div class="carousel-caption">
+        <h3>Renault Engine(985 CV)</h3>
+        <p.centro>Team motorizzati: Renault, McLaren .</p>
+      </div>   
+    </div>
+ <div class="carousel-item">
+ <img src="https://wallpaperaccess.com/full/507242.jpg" alt="Power Unit Ferrari" width="100%" height="50%">
+      <div class="carousel-caption">
+        <h3>Ferrari Engine(980 CV)</h3>
+        <p.centro>Team motorizzati: Ferrari, Haas, Alfa Romeo .</p>
+      </div>   
+    </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
 </div>
+</div>
+<br />
+<br />
+<br />
+
 <div class = "row">
 <div class = "col-sm-6">
   <div class="btn-group">
@@ -102,26 +141,26 @@ Il termine "formula", presente nel nome, fa riferimento a un insieme di regole a
     <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
     </button>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="#">Link 1</a>
-      <a class="dropdown-item" href="#">Link 2</a>
-      <a class="dropdown-item" href="#">Link 3</a>
-      <a class="dropdown-item" href="#">Link 4</a>
-      <a class="dropdown-item" href="#">Link 5</a>
-      <a class="dropdown-item" href="#">Link 6</a>
-      <a class="dropdown-item" href="#">Link 7</a>
-      <a class="dropdown-item" href="#">Link 8</a>
-      <a class="dropdown-item" href="#">Link 9</a>
-      <a class="dropdown-item" href="#">Link 10</a>
-      <a class="dropdown-item" href="#">Link 11</a>
-      <a class="dropdown-item" href="#">Link 12</a>
-      <a class="dropdown-item" href="#">Link 13</a>
-      <a class="dropdown-item" href="#">Link 14</a>
-      <a class="dropdown-item" href="#">Link 15</a>
-      <a class="dropdown-item" href="#">Link 16</a>
-      <a class="dropdown-item" href="#">Link 17</a>
-      <a class="dropdown-item" href="#">Link 18</a>
-      <a class="dropdown-item" href="#">Link 19</a>
-      <a class="dropdown-item" href="#">Link 20</a>
+      <a class="dropdown-item" href="#">L. Hamilton 164</a>
+      <a class="dropdown-item" href="#">V. Bottas 117</a>
+      <a class="dropdown-item" href="#">M. Verstappen 110</a>
+      <a class="dropdown-item" href="#">L. Stroll 57</a>
+      <a class="dropdown-item" href="#">L. Norris 57</a>
+      <a class="dropdown-item" href="#">A. Albon 48</a>
+      <a class="dropdown-item" href="#">C. Leclerc 45</a>
+      <a class="dropdown-item" href="#">P. Gasly 43</a>
+      <a class="dropdown-item" href="#">C. Sainz 41</a>
+      <a class="dropdown-item" href="#">D. Ricciardo 41</a>
+      <a class="dropdown-item" href="#">S. Perez 34</a>
+      <a class="dropdown-item" href="#">E. Ocon 30</a>
+      <a class="dropdown-item" href="#">S. Vettel 16</a>
+      <a class="dropdown-item" href="#">D. Kvyat 4</a>
+      <a class="dropdown-item" href="#">A. Giovinazzi 2</a>
+      <a class="dropdown-item" href="#">K. Magnussen 1</a>
+      <a class="dropdown-item" href="#">N. Latifi 0</a>
+      <a class="dropdown-item" href="#">K. Raikkonen 0</a>
+      <a class="dropdown-item" href="#">R. Grosjean 0</a>
+      <a class="dropdown-item" href="#">G. Russel 0</a>
     </div>
   </div>
 </div>
@@ -131,22 +170,23 @@ Il termine "formula", presente nel nome, fa riferimento a un insieme di regole a
     <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
     </button>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="#">Link 1</a>
-      <a class="dropdown-item" href="#">Link 2</a>
-      <a class="dropdown-item" href="#">Link 2</a>
-      <a class="dropdown-item" href="#">Link 2</a>
-      <a class="dropdown-item" href="#">Link 2</a>
-      <a class="dropdown-item" href="#">Link 2</a>
-      <a class="dropdown-item" href="#">Link 2</a>
-      <a class="dropdown-item" href="#">Link 2</a>
-      <a class="dropdown-item" href="#">Link 2</a>
-      <a class="dropdown-item" href="#">Link 2</a>
+      <a class="dropdown-item" href="#">Mercedes 281</a>
+      <a class="dropdown-item" href="#">Red Bull 158</a>
+      <a class="dropdown-item" href="#">McLaren 98</a>
+      <a class="dropdown-item" href="#">Racing Point 82</a>
+      <a class="dropdown-item" href="#">Renault 71</a>
+      <a class="dropdown-item" href="#">Ferrari 61</a>
+      <a class="dropdown-item" href="#">Alpha Tauri 47</a>
+      <a class="dropdown-item" href="#">Alfa Romeo 2</a>
+      <a class="dropdown-item" href="#">Haas 1</a>
+      <a class="dropdown-item" href="#">Williams 0</a>
     </div>
   </div>
 </div>
 </div>
 </div>
 
+
 <br />
 <br />
 <br />
@@ -168,7 +208,16 @@ Il termine "formula", presente nel nome, fa riferimento a un insieme di regole a
 <br />
 <br />
 <br />
+<br />
+<br />
+<br />
+
 
 
 </body>
 </html>
+
+
+
+
+
