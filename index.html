@@ -391,7 +391,207 @@ Il termine "formula", presente nel nome, fa riferimento a un insieme di regole a
 <br />
 <br />
 
+<script>
+	function getRandomIntInclusive(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min; 
+}
+const Ham = {
+    team : "Hamilton",
+    sq : "Mercedes",
+    ov : 95,
+    car : 19.5 ,
+    fortune : getRandomIntInclusive(0,11),
+    total : this.ov+this.car+this.fortune
+}
+const Bot = {
+    team : "Bottas",
+    sq : "Mercedes",
+    ov : 89,
+    car : 19.5 ,
+    fortune : getRandomIntInclusive(0,11),
+    total : this.ov+this.car+this.fortune
+}
+const Ver = {
+    team : "Verstappen",
+    sq : "Red Bull",
+    ov : 91 ,
+    car : 16 ,
+    fortune : getRandomIntInclusive(0,11),
+    total : this.ov+this.car+this.fortune
+}
+const Per = {
+    team : "Perez",
+    sq : "Red Bull",
+    ov : 87 ,
+    car : 16 ,
+    fortune : getRandomIntInclusive(0,11),
+    total : this.ov+this.car+this.fortune
+}
+const Ric = {
+    team : "Ricciardo",
+    sq : "McLaren",
+    ov : 89 ,
+    car : 13.5 ,
+    fortune : getRandomIntInclusive(0,11),
+    total : this.ov+this.car+this.fortune
+}
+const Sai = {
+    team : "Sainz",
+    sq : "Ferrari",
+    ov : 83 ,
+    car : 10.5 ,
+    fortune : getRandomIntInclusive(0,11),
+    total : this.ov+this.car+this.fortune
+}
+const Lec = {
+    team : "Leclerc",
+    sq : "Ferrari",
+    ov : 86 ,
+    car : 10.5 ,
+    fortune : getRandomIntInclusive(0,11),
+    total : this.ov+this.car+this.fortune
+}
+const Nor = {
+    team : "Norris",
+    sq : "McLaren",
+    ov : 79 ,
+    car : 13.5 ,
+    fortune : getRandomIntInclusive(0,11),
+    total : this.ov+this.car+this.fortune
+}
+const Gas = {
+    team : "Gasly",
+    sq : "AlphaTauri",
+    ov : 80 ,
+    car : 9 ,
+    fortune : getRandomIntInclusive(0,11),
+    total : this.ov+this.car+this.fortune
+}
+const Str = {
+    team : "Stroll",
+    sq : "Aston Martin",
+    ov : 78 ,
+    car : 13.5 ,
+    fortune : getRandomIntInclusive(0,11),
+    total : this.ov+this.car+this.fortune
+}
+const Oco = {
+    team : "Ocon",
+    sq : "Renault",
+    ov : 79,
+    car : 12.5 ,
+    fortune : getRandomIntInclusive(0,11),
+    total : this.ov+this.car+this.fortune
+}
+const Vet = {
+    team : "Vettel",
+    sq : "Aston Martin",
+    ov : 87 ,
+    car : 13.5 ,
+    fortune : getRandomIntInclusive(0,11),
+    total : this.ov+this.car+this.fortune
+}
+const Rai = {
+    team : "Raikkonen",
+    sq : "Alfa Romeo",
+    ov : 87 ,
+    car : 5.5 ,
+    fortune : getRandomIntInclusive(0,11),
+    total : this.ov+this.car+this.fortune
+}
+const Gio = {
+    team : "Giovinazzi",
+    sq : "Alfa Romeo",
+    ov : 73 ,
+    car : 5.5 ,
+    fortune : getRandomIntInclusive(0,11),
+    total : this.ov+this.car+this.fortune
+}
+const Rus = {
+    team : "Russel",
+    sq : "Williams",
+    ov : 77,
+    car : 2.5 ,
+    fortune : getRandomIntInclusive(0,11),
+    total : this.ov+this.car+this.fortune
+}
+const Lat = {
+    team : "Latifi",
+    sq : "Williams",
+    ov : 64 ,
+    car : 2.5 ,
+    fortune : getRandomIntInclusive(0,11),
+    total : this.ov+this.car+this.fortune
+}
+const Alo = {
+    team : "Alonso",
+    sq : "Renault",
+    ov : 78 ,
+    car : 12.5,
+    fortune : getRandomIntInclusive(0,11),
+    total : this.ov+this.car+this.fortune
+}
+const Tsu = {
+    team : "Tsunoda",
+    sq : "AlphaTauri",
+    ov : 65,
+    car :9 ,
+    fortune : getRandomIntInclusive(0,11),
+    total : this.ov+this.car+this.fortune
+}
+const Sch = {
+    team : "Schumacker",
+    sq : "Haas",
+    ov : 67 ,
+    car : 2.5 ,
+    fortune : getRandomIntInclusive(0,11),
+    total : this.ov+this.car+this.fortune   
+}
+const Maz = {
+    team : "Mazepin",
+    sq : "Haas",
+    ov : 63,
+    car : 2.5,
+    fortune : getRandomIntInclusive(0,11),
+    total : this.ov+this.car+this.fortune
+}
+function buildRank(){
+    const rank = new Array(20);
+    let ranking = ""
+    rank[0] = [Ham.ov+Ham.car+Ham.fortune,Ham.team,Ham.sq];
+    rank[1] = [Bot.ov+Bot.car+Bot.fortune,Bot.team,Ham.sq];
+    rank[2] = [Ver.ov+Ver.car+Ver.fortune,Ver.team,Ver.sq];
+    rank[3] = [Per.ov+Per.car+Per.fortune,Per.team,Ver.sq];
+    rank[4] = [Ric.ov+Ric.car+Ric.fortune,Ric.team,Ric.sq];
+    rank[5] = [Sai.ov+Sai.car+Sai.fortune,Sai.team,Sai.sq];
+    rank[6] = [Lec.ov+Lec.car+Lec.fortune,Lec.team,Sai.sq];
+    rank[7] = [Nor.ov+Nor.car+Nor.fortune,Nor.team,Nor.sq];
+    rank[8] = [Gas.ov+Gas.car+Gas.fortune,Gas.team,Gas.sq];
+    rank[9] = [Str.ov+Str.car+Str.fortune,Str.team,Str.sq];
+    rank[10] =[Oco.ov+Oco.car+Oco.fortune,Oco.team,Oco.sq];
+    rank[11] =[Vet.ov+Vet.car+Vet.fortune,Vet.team,Vet.sq];
+    rank[12] =[Rai.ov+Rai.car+Rai.fortune,Rai.team,Rai.sq];
+    rank[13] =[Gio.ov+Gio.car+Gio.fortune,Gio.team,Gio.sq];
+    rank[14] =[Rus.ov+Rus.car+Rus.fortune,Rus.team,Rus.sq];
+    rank[15] =[Lat.ov+Lat.car+Lat.fortune,Lat.team,Lat.sq];
+    rank[16] =[Alo.ov+Alo.car+Alo.fortune,Alo.team,Alo.sq];
+    rank[17] =[Tsu.ov+Tsu.car+Tsu.fortune,Tsu.team,Tsu.sq];
+    rank[18] =[Sch.ov+Sch.car+Sch.fortune,Sch.team,Sch.sq];
+    rank[19] =[Maz.ov+Maz.car+Maz.fortune,Maz.team,Sch.sq];
+    const rank1 = rank.sort((a,b) => {
+        return (a[0] > b[0]) ? -1 :
+        (a[0] < b[0]) ? +1 : 0 
+    })
+    for(let i = 0 ; i< 20;i++){
+        ranking +=  String(i+1)+" place : " +String(rank1[i][1])+ " "+ rank[i][2]+ "\n"
+    }
+    alert(ranking)
+}
+</script>
 
+<button type="button" class="btn btn-danger" onclick = "buildRank()">CLICCA QUI PER UNA PREDICTION SULLA STAGIONE 2020-2021</button>
 
 </body>
 </html>
