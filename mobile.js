@@ -9,6 +9,7 @@ let changeimg2 = () => {
 }
 
 let insertPass = () => {
+alert(document.getElementById("jsprova").src)
 if (document.getElementById("jsprova").src == "./phone2.jpg"){
 let x = 0
 let password = prompt("Insert password")
