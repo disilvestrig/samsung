@@ -1,16 +1,19 @@
+let on = 0
 let changeimg = () => {
     
     document.getElementById("jsprova").src = "./phone2.jpg"
+    on = 2
 
 }
 
 let changeimg2 = () => {
     document.getElementById("jsprova").src = "./phone1.jpg"
+    on = 1
 }
 
 let insertPass = () => {
-alert(document.getElementById("jsprova").src)
-if (document.getElementById("jsprova").src == "./phone2.jpg"){
+
+if (on == 2){
 let x = 0
 let password = prompt("Insert password")
 while (password != 1234){
