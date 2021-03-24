@@ -9,7 +9,7 @@ let changeimg2 = () => {
 }
 
 let insertPass = () => {
-if (document.getElementById("jsprova").src == "file:///Users/giulio/server-verifica/phone2.jpg"){
+if (document.getElementById("jsprova").src == "./phone2.jpg"){
 let x = 0
 let password = prompt("Insert password")
 while (password != 1234){
