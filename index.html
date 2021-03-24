@@ -11,35 +11,7 @@
 <title>Sito Informativo Samsung</title>
 </head>
 <body>
-<script>
-let changeimg = () => {
-    
-    document.getElementById("jsprova").src = "./phone2.jpg"
-
-}
-
-let changeimg2 = () => {
-    document.getElementById("jsprova").src = "./phone1.jpg"
-}
-
-let insertPass = () => {
-if (document.getElementById("jsprova").src == "file:///Users/giulio/server-verifica/phone2.jpg"){
-let x = 0
-let password = prompt("Insert password")
-while (password != 1234){
-    alert("Wrong password")
-    password = prompt("Insert password")
-    x++ 
-    if (x == 5){
-        alert("The phone is blocked refresh the page")
-        break
-    }   
-}
-if ( +password == 1234){
-    document.getElementById("jsprova").src = "./phone3.jpg"
-}
-}  
-}
+<script src = mobile.js >
 </script>
 <div class= "container">
 <h1>SAMSUNG</h1>
@@ -101,6 +73,8 @@ if ( +password == 1234){
 </div>
 </div>
 </div>
+<br>
+<br>
 <div class="row" background-color="grey">
 <div class="mydiv1" class="col-sm-12" >
 <div>
@@ -129,7 +103,7 @@ if ( +password == 1234){
 </div>
 </div>
 
-  <img src = "./phone1.jpg" id ="jsprova" width = "300px" height = "600px" onclick="insertPass()">
+  <img src = "./phone1.jpg" alt = "telefono" id ="jsprova" width = "300px" height = "600px" onclick="insertPass()">
 
 <div class="row">
 <div class="col-sm-6">
