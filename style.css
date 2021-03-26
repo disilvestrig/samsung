@@ -110,7 +110,7 @@ input[type=text], select {
         padding-left: 1%;
         padding-top: 4%;
         padding-bottom: 4%;
-        margin-left: 3vh;
-        margin-right: 3vh;
+        margin-left: 0vh;
+        margin-right: 0vh;
         background-color: rgb(0, 0, 0);
         object-fit: contain;  }
