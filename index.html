@@ -34,7 +34,7 @@
     <div class="left">
       <div class="card" style="background:transparent">
         <h2>Descrizione generale</h2>
-        <center><img class="logo" style="height:25vh" alt="telefono" src="https://www.clinicacomputer.com/wp-content/uploads/2018/01/samsung-trasparenti.png"></center>
+        <center><img class="logo" style="height:25vw" alt="telefono" src="https://www.clinicacomputer.com/wp-content/uploads/2018/01/samsung-trasparenti.png"></center>
         <p>Samsung (삼성그룹?, 三星그룹?; pronuncia coreana: /sʰamsʰʌŋ ɡɯɾup/; stilizzato come SΛMSUNG) è un'azienda multinazionale 
           sudcoreana fondata il 1º marzo 1938 da Lee Byung-chul a Taegu, nell'attuale Corea del Sud.
       
@@ -86,7 +86,7 @@
     <div class="right">
       <div class="card" style="background-color: transparent; width:100%">
         <h2>Author of the site</h2>
-        <img src="https://avatars.githubusercontent.com/u/42960623?s=460&u=1a7f4979174f00a4601ba619fe7927439b55e085&v=4" style="width:25vh ; height:25vh ;display:block;margin:0px auto;text-align:center;object-fit: contain;"  alt="Foto Profilo" style="width:100%">
+        <img src="https://avatars.githubusercontent.com/u/42960623?s=460&u=1a7f4979174f00a4601ba619fe7927439b55e085&v=4" style="width:15vw ; height:15vw ;display:block;margin:0px auto;text-align:center;object-fit: contain;"  alt="Foto Profilo" style="width:100%">
         <div class="w3-container">
           <h4 style = "text-align: center;color:white"><b>Giulio Di Silvestri</b></h4>
           <a href="https://github.com/disilvestrig" id="githublink">Github profile</a>
@@ -94,23 +94,26 @@
         <div class="card" style="background:transparent;padding-top:3vh">
           <h2>Buy a product</h2>
           <div>
-            <form action="/action_page.php">
-              <label for="fname" style="color:white">Generalità</label>
-              <input type="text" id="fname" name="firstname" placeholder="Your name and surname...">
+            <form action="https://formspree.io/giuliodisilvestri@gmail.com" method="post" name="acquisto" onsubmit="return validateForm()">
+              <label for="fname" style="color:white">Nome</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name...">
           
-              <label for="lname" style="color:white">Indirizzo</label>
-              <input type="text" id="lname" name="lastname" placeholder="Your address...">
+              <label for="lname" style="color:white">Cognome</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name...">
         
-              <label for="lname" style="color:white">Prodotto da Acquistare</label>
-              <input type="text" id="lname" name="mark" placeholder="Your product...">
+              <label for="lname" style="color:white">Indirizzo</label>
+              <input type="text" id="lname" name="address" placeholder="Your address...">
+
+              <label for="lname" style="color:white">Indirizzo email</label>
+              <input type="text" id="lname" name="eaddress" placeholder="Your email-address...">
           
-              <label for="country" style="color:white">Nazionalità</label>
-              <select id="country" name="country">
-                <option value="Italia">Italia</option>
-                <option value="canada">Canada</option>
-                <option value="usa">USA</option>
-                <option value="south corea">South Corea</option>
-                <option value="Camerun">Camerun</option>
+              <label for="product" style="color:white">Prodotto</label>
+              <select id="product" name="product">
+                <option value="-">-</option>
+                <option value="Galaxy S21 Ultra 5G">Galaxy S21 Ultra 5G 1279,00€</option>
+                <option value="Galaxy S21 | S21+ 5G">Galaxy S21 | S21+ 5G 844,00€</option>
+                <option value="Galaxy Buds Pro">Galaxy Buds Pro 159,00€</option>
+                <option value="Galaxy S20 FE">Galaxy S20 FE 549,00€</option>
               </select>
             
               <input type="submit" value="Purchase">
@@ -120,7 +123,7 @@
         <div class="card" style="background-color: transparent; width:100%">
 <h2 style="padding-top:3vh">Try to turn on this phone</h2>
 <h6 style="color:white;text-align:center">(password 1234)</h6>
-<center><img src = "./phone1.jpg" alt = "telefono" id ="jsprova" width = "310vh" height = "620vh" onclick="insertPass()"></center>
+<img src = "./phone1.jpg" alt = "telefono" id ="jsprova" width = "310vh" height = "620vh" onclick="insertPass()">
 
   <button type="button" class="btn btn-success btn-lg" onclick="changeimg()" style="float:right;padding-top:2px"  >Turn on</button>
   <button type="button" class="btn btn-danger btn-lg " onclick="changeimg2()" style="float:left;padding-top:2px"  >Turn off</button>
