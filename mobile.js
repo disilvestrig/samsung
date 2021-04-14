@@ -27,29 +27,28 @@ if (on == 2){
 }
 if ( +password == 1234){
     on = 1
-    document.getElementById("jsprova").src = "./phone3.jpg"
-}
+    document.getElementById("jsprova").src = "./phone3.jpg"}
 }  
 }
 
 let validateForm = () => {
-    if (document.acquisto.lastname.value=="") { 
+    if (document.acquisto.lastname.value==="") { 
     alert("Inserire cognome");
     return false;
     }
-    if (document.acquisto.firstname.value=="") {
+    if (document.acquisto.firstname.value==="") {
         alert("Inserire nome");
         return false;
       }
-    if (document.acquisto.address.value=="") {
+    if (document.acquisto.address.value==="") {
         alert("Inserire indirizzo");
         return false;
       }
-    if (document.acquisto.eaddress.value=="") {
+    if (document.acquisto.emailaddress.value === "") {
         alert("Inserire indirizzo email");
         return false;
       }
-    if (document.acquisto.product.value=="-") { 
+    if (document.acquisto.product.value == "-") { 
     alert("Selezionare un prodotto");
     return false;
     }
